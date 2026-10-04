@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- This makes the site scale correctly on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: title and description show up in Google results -->
+  <title>Tushar | Web Designer &amp; Developer</title>
+  <meta name="description" content="Tushar is a freelance web designer and developer creating modern, responsive and user-friendly websites for businesses and individuals.">
+  <!-- Google Fonts (Manrope). If it fails to load, the browser uses a fallback font. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Lets keyboard users skip straight to the content -->
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- NAVBAR: sticky (stays at top while scrolling). Links jump to sections by id. -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Tushar</a>
+      <!-- Hamburger button: only visible on small screens (see CSS) -->
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: first thing visitors see -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-hi">Hi, I'm Tushar</p>
+          <h1>Web Designer &amp; Developer</h1>
+          <p class="lead">I create modern, responsive and user-friendly websites for businesses and individuals.</p>
+          <div class="btn-row">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <!-- Visual element: a fake code editor drawn with pure HTML/CSS (no image needed) -->
+        <div class="code-window" aria-hidden="true">
+          <div class="code-bar"><i></i><i></i><i></i><span>index.html</span></div>
+<pre><code><span class="c-tag">&lt;section</span> <span class="c-attr">class</span>=<span class="c-str">"hero"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span>Your idea,<span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span>built to work on<span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span>every screen.<span class="c-tag">&lt;/p&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span>
+
+<span class="c-attr">.hero</span> { <span class="c-prop">display</span>: grid; }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About Me</h2>
+        <p>I'm a student and a beginner freelance web developer. I focus on building clean, responsive and user-friendly websites that are easy to use on any device.</p>
+        <p>I'm still growing my skills, and I take each project seriously: I listen to what you need, keep the design simple, and pay attention to the details.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid grid-3">
+          <article class="card"><h3>HTML</h3><p>Semantic, well-structured pages.</p></article>
+          <article class="card"><h3>CSS</h3><p>Flexbox, Grid and clean styling.</p></article>
+          <article class="card"><h3>JavaScript</h3><p>Menus, forms and interactive features.</p></article>
+          <article class="card"><h3>Responsive Web Design</h3><p>Layouts that fit phones, tablets and desktops.</p></article>
+          <article class="card"><h3>Git</h3><p>Tracking changes to my code.</p></article>
+          <article class="card"><h3>GitHub</h3><p>Hosting and sharing projects.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid grid-4">
+          <article class="card"><h3>Business Websites</h3><p>A clear, professional website that presents your business online.</p></article>
+          <article class="card"><h3>Landing Pages</h3><p>One focused page that explains your offer and gets people to contact you.</p></article>
+          <article class="card"><h3>Website Redesign</h3><p>A fresh, cleaner look for a site that feels outdated.</p></article>
+          <article class="card"><h3>Mobile-Friendly Websites</h3><p>Sites that look and work well on every screen size.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS: clearly labelled as demo/practice projects -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="note">These are demo projects I built for practice. They are not real client work.</p>
+        <div class="grid grid-3">
+          <article class="card project">
+            <!-- Replace this colored box with a screenshot: <img src="images/fitzone.png" alt="FitZone Gym website"> -->
+            <div class="thumb thumb-1" aria-hidden="true">FitZone</div>
+            <span class="badge">Demo Project</span>
+            <h3>FitZone Gym</h3>
+            <p class="type">Gym / Fitness Website</p>
+            <p>Modern responsive website for a fitness business.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+            <div class="btn-row">
+              <a href="https://example.com/fitzone-demo" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+              <a href="https://github.com/your-username/fitzone-gym" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View Code</a>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="thumb thumb-2" aria-hidden="true">Foodie Café</div>
+            <span class="badge">Demo Project</span>
+            <h3>Foodie Café</h3>
+            <p class="type">Restaurant / Café Website</p>
+            <p>Modern restaurant website with menu, gallery and contact section.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+            <div class="btn-row">
+              <a href="https://example.com/foodie-cafe-demo" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+              <a href="https://github.com/your-username/foodie-cafe" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View Code</a>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="thumb thumb-3" aria-hidden="true">Local Business</div>
+            <span class="badge">Demo Project</span>
+            <h3>Local Business</h3>
+            <p class="type">Small Business Website</p>
+            <p>Professional landing page for a local business.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+            <div class="btn-row">
+              <a href="https://example.com/local-business-demo" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+              <a href="https://github.com/your-username/local-business" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME -->
+    <section class="section" id="why">
+      <div class="container narrow">
+        <h2>Why Work With Me</h2>
+        <ul class="checklist">
+          <li>Responsive design</li>
+          <li>Clean UI</li>
+          <li>Mobile-friendly websites</li>
+          <li>Attention to detail</li>
+          <li>Affordable solutions for small businesses</li>
+          <li>Clear communication</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Let's Work Together</h2>
+          <p>Have a website in mind? Send me a message and I'll reply as soon as I can.</p>
+          <!-- Replace these placeholder links with your real details -->
+          <ul class="contact-list">
+            <li><a href="mailto:tushar.saini604535@gmail.com">Email: tushar.saini604535@gmail.com</a></li>
+            <li><a href="https://wa.me/918373935041" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://github.com/iamtushar01" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Tushar</strong>
+        <p>Web Designer &amp; Developer</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/iamtushar01" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://wa.me/918373935041" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+      <!-- The year is filled in automatically by script.js -->
+      <p>&copy; <span id="year">2026</span> Tushar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
